@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Fontawesome/css/all.css" />
+    <link rel="stylesheet" href="tables.css" />
+  </head>
+  <body>
+    <nav class="h-[80px] w-full bg-white px-2 shadow shadow-grey fixed top-0">
+      <img
+        src="images/obt logo.png"
+        alt="obt logo"
+        class="w-[150px] h-[100%]"
+      />
+    </nav>
+    <div class="block h-[100%] w-[99%] my-[100px] mx-[auto] bg-white" id="main">
+      <section>
+        <form action="submit-task.php" method="post">
+          <fieldset
+            class="flex flex-col my-[30px] mx-[auto] py-[5px] px-[25px] gap-[9px] w-[70%] bg-[#926D3C] shadow-[grey]"
+          >
+            <legend
+              class="bg-[whitesmoke] text-black text-right py-1 px-3 text-[12px] font-bold shadow-grey shadow"
+            >
+              Add New Task
+            </legend>
+            <label class="text-[12px] font-bold text-white" for="fName"
+              >Name:</label
+            >
+            <input
+              class="outline-0 text-black my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px]"
+              type="text"
+              name="fName"
+              id="fName"
+              placeholder="Enter Name"
+            />
+            <label class="text-[12px] font-bold text-white" for="id">ID:</label>
+            <input
+              class="outline-0 text-black my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px]"
+              type="text"
+              name="id"
+              id="id"
+              placeholder="Enter ID"
+            />
+            <label class="text-[12px] font-bold text-white" for="reward"
+              >Reward:</label
+            >
+            <select
+              class="outline-0 my-[5px] mx-[6px] w-[100%] font-bold text-[12px] h-[28px] box-border py-[5px] px-[9px]"
+              name="reward"
+              id="reward"
+            >
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Gift Card"
+              >
+                Gift Card
+              </option>
+              <option class="p-[10px] text-[17px] bg-[whitesmoke]" value="btc">
+                Bitcoin
+              </option>
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Assistance"
+              >
+                Fin. Assistance
+              </option>
+            </select>
+            <label class="text-[12px] font-bold text-white" for="value"
+              >Value:</label
+            >
+            <input
+              class="outline-0 text-black my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px]"
+              type="text"
+              name="value"
+              id="value"
+              placeholder="Enter Value"
+            />
+            <input
+              class="my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px] border rounded border-white text-[whitesmoke] hover:text-black hover:bg-[whitesmoke]"
+              type="submit"
+              value="Add Reward"
+            />
+          </fieldset>
+        </form>
+        <!-- Errand Management Overview -->
+        <div id="tableContainer">
+          <h6
+            id="subhead"
+            class="text-center font-black py-[7px] text-black text-[14px] bg-white border border-black"
+          >
+            Errand Management Overview
+          </h6>
+          <table class="w-[100%] border-collapse">
+            <thead>
+              <tr>
+                <th>Fan Name</th>
+                <th>Fan ID</th>
+                <th>Reward</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Leandro Silva</td>
+                <td>TNFC010</td>
+                <td>Gift Card</td>
+                <td>$870</td>
+              </tr>
+              <tr>
+                <td>Zara Khan</td>
+                <td>TNFC011</td>
+                <td>Assistance</td>
+                <td>$7,500</td>
+              </tr>
+              <tr>
+                <td>Luca Bianchi</td>
+                <td>TNFC013</td>
+                <td>Cash</td>
+                <td>$750</td>
+              </tr>
+              <tr>
+                <td>Ella Brown</td>
+                <td>TNFC016</td>
+                <td>Gift Card</td>
+                <td>$3,000</td>
+              </tr>
+              <tr>
+                <td>Leticia Olivares</td>
+                <td>TNFC018</td>
+                <td>Assistance</td>
+                <td>$5,000</td>
+              </tr>
+              <tr>
+                <td>Mikhail Petrov</td>
+                <td>TNFC019</td>
+                <td>Gift Card</td>
+                <td>$6,050</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <form
+          action="submit-member.php"
+          method="post"
+          <form
+          action="submit-task.php"
+          method="post"
+          id="newMember"
+        >
+          <fieldset
+            class="flex flex-col my-[30px] mx-[auto] py-[5px] px-[25px] gap-[9px] w-[70%] bg-[#926D3C] shadow-[grey]"
+          >
+            <legend
+              class="bg-[whitesmoke] text-black text-right py-1 px-3 text-[12px] font-bold shadow-grey shadow"
+            >
+              Add New Member
+            </legend>
+            <label class="text-[12px] font-bold text-white" for="sn"
+              >S/N:</label
+            >
+            <input
+              class="outline-0 my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px]"
+              type="text"
+              name="sn"
+              id="sn"
+              placeholder="Enter S/N"
+            />
+            <label class="text-[12px] font-bold text-white" for="nam"
+              >Name:</label
+            >
+            <input
+              class="outline-0 my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px]"
+              type="text"
+              name="nam"
+              id="nam"
+              placeholder="Enter Name"
+            />
+            <label class="text-[12px] font-bold text-white" for="cardType"
+              >Card Type:</label
+            >
+            <select
+              class="outline-0 my-[5px] mx-[6px] w-[100%] font-bold text-[12px] h-[28px] box-border py-[5px] px-[9px]"
+              name="cardType"
+              id="cardType"
+            >
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Standard"
+              >
+                Standard
+              </option>
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Premium"
+              >
+                Premium
+              </option>
+              <option class="p-[10px] text-[17px] bg-[whitesmoke]" value="VIP">
+                VIP
+              </option>
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Elite"
+              >
+                Elite
+              </option>
+            </select>
+            <label class="text-[12px] font-bold text-white" for="payType"
+              >Payment Type:</label
+            >
+            <select
+              class="outline-0 my-[5px] mx-[6px] w-[100%] font-bold text-[12px] h-[28px] box-border py-[5px] px-[9px]"
+              name="payType"
+              id="payType"
+            >
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Installments"
+              >
+                Installments
+              </option>
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Full Payment"
+              >
+                Full Payment
+              </option>
+            </select>
+            <label class="text-[12px] font-bold text-white" for="stat"
+              >Status:</label
+            >
+            <select
+              class="outline-0 my-[5px] mx-[6px] w-[100%] font-bold text-[12px] h-[28px] box-border py-[5px] px-[9px]"
+              name="stat"
+              id="stat"
+            >
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="Pending"
+              >
+                Pending
+              </option>
+              <option
+                class="p-[10px] text-[17px] bg-[whitesmoke]"
+                value="In Progress"
+              >
+                In Progress
+              </option>
+              <option class="p-[10px] text-[17px] bg-[whitesmoke]" value="Paid">
+                Paid
+              </option>
+            </select>
+            <input
+              class="my-[5px] mx-[6px] w-[100%] text-[12px] font-bold h-[28px] py-[5px] px-[9px] border rounded border-white text-[whitesmoke] hover:text-black hover:bg-[whitesmoke]"
+              type="submit"
+              value="Add Member"
+            />
+          </fieldset>
+        </form>
+        <!-- Top Membership Table Overview -->
+        <div id="tableContainer">
+          <h6
+            id="subhead"
+            class="text-center font-black py-[7px] text-black text-[14px] bg-white border border-black"
+          >
+            Top Membership Table Overview
+          </h6>
+          <table class="membership-table mr-[30px] w-[100%] border-collapse">
+            <thead>
+              <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Card Type</th>
+                <th>Payment Type</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>015</td>
+                <td>Greg Whitfield</td>
+                <td>Elite</td>
+                <td>Installments</td>
+                <td style="color: green">Pending</td>
+              </tr>
+              <tr>
+                <td>016</td>
+                <td>Aisha Ahmed</td>
+                <td>Elite</td>
+                <td>Installments</td>
+                <td style="color: green">Pending</td>
+              </tr>
+              <tr>
+                <td>017</td>
+                <td>Zara Khan</td>
+                <td>Elite</td>
+                <td>Full Payment</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>018</td>
+                <td>Luca Bianchi</td>
+                <td>VIP</td>
+                <td>Installments</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>019</td>
+                <td>Anna Schmidt</td>
+                <td>Premium</td>
+                <td>Full Payment</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>021</td>
+                <td>Gabriel Pinto</td>
+                <td>Premium</td>
+                <td>Full Payment</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>022</td>
+                <td>Mikhail Petrov</td>
+                <td>Elite</td>
+                <td>Installments</td>
+                <td style="color: green">Pending</td>
+              </tr>
+              <tr>
+                <td>023</td>
+                <td>Leticia Olivares</td>
+                <td>VIP</td>
+                <td>Installments</td>
+                <td style="color: orange">In Progress</td>
+              </tr>
+              <tr>
+                <td>024</td>
+                <td>Cheng Wei</td>
+                <td>Standard</td>
+                <td>Full Payment</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>025</td>
+                <td>Mandi Portar</td>
+                <td>VIP</td>
+                <td>Installments</td>
+                <td style="color: orange">In Progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Handle Add Reward form submission
+        const addRewardForm = document.querySelector(
+          'form[action="submit-task.php"]'
+        );
+        addRewardForm.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Get form data
+          const fName = document.getElementById("fName").value;
+          const id = document.getElementById("id").value;
+          const reward = document.getElementById("reward").value;
+          const value = document.getElementById("value").value;
+
+          // Create a new table row
+          const newRow = document.createElement("tr");
+          newRow.innerHTML = `
+                  <td>${fName}</td>
+                  <td>${id}</td>
+                  <td>${reward}</td>
+                  <td>${value}</td>
+              `;
+
+          // Append the new row to the table
+          const tableBody = document.querySelector(
+            "#tableContainer table tbody"
+          );
+          tableBody.appendChild(newRow);
+
+          // Clear the form
+          addRewardForm.reset();
+        });
+
+        // Handle Add Member form submission
+        const addMemberForm = document.getElementById("newMember");
+        addMemberForm.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Get form data
+          const sn = document.getElementById("sn").value;
+          const name = document.getElementById("nam").value;
+          const cardType = document.getElementById("cardType").value;
+          const payType = document.getElementById("payType").value;
+          const stat = document.getElementById("stat").value;
+
+          // Find the row to replace
+          const rows = document.querySelectorAll(".membership-table tbody tr");
+          let rowToReplace = null;
+          for (const row of rows) {
+            if (row.cells[0].textContent.trim() === sn) {
+              rowToReplace = row;
+              break;
+            }
+          }
+
+          if (rowToReplace) {
+            // Update the row with new data
+            rowToReplace.innerHTML = `
+                      <td>${sn}</td>
+                      <td>${name}</td>
+                      <td>${cardType}</td>
+                      <td>${payType}</td>
+                      <td style="color: ${
+                        stat === "Paid"
+                          ? "white"
+                          : stat === "In Progress"
+                          ? "orange"
+                          : "orange"
+                      }">${stat}</td>
+                  `;
+          } else {
+            // Add a new row if no matching row is found
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                      <td>${sn}</td>
+                      <td>${name}</td>
+                      <td>${cardType}</td>
+                      <td>${payType}</td>
+                      <td style="color: ${
+                        stat === "Paid"
+                          ? "white"
+                          : stat === "In Progress"
+                          ? "orange"
+                          : "green"
+                      }">${stat}</td>
+                  `;
+            const tableBody = document.querySelector(".membership-table tbody");
+            tableBody.appendChild(newRow);
+          }
+
+          // Clear the form
+          addMemberForm.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
